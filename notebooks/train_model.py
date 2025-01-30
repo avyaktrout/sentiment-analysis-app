@@ -4,8 +4,8 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
 import joblib
 
-# Load dataset
-data = pd.read_csv('data/sentiment140.csv', encoding='latin-1', header=None)
+# Load the smaller dataset
+data = pd.read_csv('data/sentiment140_small.csv', encoding='latin-1', header=None)
 data.columns = ['target', 'ids', 'date', 'flag', 'user', 'text']
 
 # Preprocess data
