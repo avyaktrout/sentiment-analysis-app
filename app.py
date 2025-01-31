@@ -1,5 +1,6 @@
 from flask import Flask, request, render_template
 import joblib
+import os
 
 app = Flask(__name__)
 
@@ -20,4 +21,5 @@ def predict():
     return render_template('result.html', sentiment=sentiment, text=user_input)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get('PORT', 5000))  # Use the $PORT environment variable
+    app.run(host='0.0.0.0', port=port)
