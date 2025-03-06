@@ -2,9 +2,6 @@
 
 This is a **full-stack web application** that performs sentiment analysis on user-input text. It uses Python, Flask, and scikit-learn to predict whether the sentiment is **positive** or **negative**.
 
-## Live Demo
-[View the live demo on Heroku](https://sentiment-analysis-avyakt-eb2e3dbad6fd.herokuapp.com/)
-
 ## Features
 - **Sentiment Analysis**: Predicts the sentiment (positive or negative) of user-input text.
 - **Machine Learning Model**: Trained on the Sentiment140 dataset using a logistic regression model (85% accuracy).
